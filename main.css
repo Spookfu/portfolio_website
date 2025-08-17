@@ -111,3 +111,18 @@ nav {
   transition: color 0.3s ease;
 }
 
+footer {
+  padding: 1rem;
+  padding-left: 2rem;
+}
+
+.foot{
+  padding-right: 20px;
+  text-decoration: dotted;
+  text-decoration-color: white;
+  text-decoration-line: underline;
+}
+
+.in-img {
+  vertical-align: middle;
+}
