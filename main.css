@@ -1,0 +1,113 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: unset;
+  text-decoration: none;
+  --base: #1f1f1f;
+  --base-t: #1f1f1f2b;
+  --project: #1c5914;
+  --highlight: #142351;
+  --contact: #672e16;
+  --base-light: #3d3d3d;
+  --text: #d1d1d1;
+  --text-s: #878787;
+  --text-hl: #ffffff;
+  --project-hl: #8ad880;
+  --contact-hl: #dc8763;
+
+}
+
+body {
+  background-color: var(--base-light);
+  color: var(--text);
+}
+
+main {
+  padding: 1rem;
+  padding-top: 4.5rem;
+}
+
+nav {
+  padding: 10px;
+  block-size: 3.5rem;
+  background-color: var(--base);
+  font-size: larger;
+  position: fixed;
+  top: 0;
+  z-index: 10000;
+  width: 100%;
+}
+
+.nav_item {
+  font-size: 25px;
+  user-select: none;
+}
+
+.nav_item_home {
+  border: 0;
+  line-height: 2;
+  padding: 5px;
+  padding-left: 1rem;
+  padding-right: 1.5rem;
+  border-radius: 5px;
+  background-color:var(--base);
+  transition: color 0.3s ease;
+}
+
+.nav_item_proj {
+  border: 0;
+  line-height: 2;
+  padding: 5px;
+  padding-right: 0.5rem;
+  border-radius: 5px;
+  background-color:var(--base);
+  transition: color 0.3s ease;
+}
+
+.nav_item_proj:hover {
+  background-color: var(--project);
+  color: var(--project-hl);
+  transition: color 0.3s ease;
+}
+
+.nav_item_proj.active {
+  color: var(--text-s);
+  transition: color 0.3s ease;
+  text-decoration: underline;
+}
+
+.nav_item_proj.active:hover {
+  background-color: var(--project);
+  color: var(--project-hl);
+  transition: color 0.3s ease;
+}
+
+.nav_item_contact {
+  border: 0;
+  line-height: 2;
+  padding: 5px;
+  border-radius: 5px;
+  background-color: var(--base);
+  transition: color 0.3s ease;
+}
+
+.nav_item_contact:hover {
+  background-color: var(--contact);
+  color: var(--contact-hl);
+  transition: color 0.3s ease;
+}
+
+.nav_item_contact.active {
+  color: var(--text-s);
+  transition: color 0.3s ease;
+  text-decoration: underline;
+}
+
+.nav_item_contact.active:hover {
+  background-color: var(--contact);
+  color: var(--contact-hl);
+  transition: color 0.3s ease;
+}
+
