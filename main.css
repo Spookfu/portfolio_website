@@ -16,19 +16,24 @@
   --text-hl: #ffffff;
   --project-hl: #8ad880;
   --contact-hl: #dc8763;
+  --project-ac: #311509;
+  --contact-ac: #082d04;
 
 }
 
+/* Page Settings */
 body {
   background-color: var(--base-light);
   color: var(--text);
 }
 
+/* Body Text */
 main {
   padding: 1rem;
   padding-top: 4.5rem;
 }
 
+/* Navigation Bar */
 nav {
   padding: 10px;
   block-size: 3.5rem;
@@ -38,11 +43,22 @@ nav {
   top: 0;
   z-index: 10000;
   width: 100%;
+  transition: color 0.3s ease;
+}
+
+nav.project {
+  background-color: var(--project-ac);
+}
+
+nav.contact {
+  background-color: var(--contact-ac);
 }
 
 .nav_item {
   font-size: 25px;
   user-select: none;
+  transition: inherit;
+  
 }
 
 .nav_item_home {
@@ -53,7 +69,7 @@ nav {
   padding-right: 1.5rem;
   border-radius: 5px;
   background-color:var(--base);
-  transition: color 0.3s ease;
+  transition: inherit
 }
 
 .nav_item_proj {
@@ -63,25 +79,25 @@ nav {
   padding-right: 0.5rem;
   border-radius: 5px;
   background-color:var(--base);
-  transition: color 0.3s ease;
+  transition: inherit
 }
 
 .nav_item_proj:hover {
   background-color: var(--project);
   color: var(--project-hl);
-  transition: color 0.3s ease;
+  transition: inherit
 }
 
 .nav_item_proj.active {
   color: var(--text-s);
-  transition: color 0.3s ease;
+  transition: inherit;
   text-decoration: underline;
 }
 
 .nav_item_proj.active:hover {
   background-color: var(--project);
   color: var(--project-hl);
-  transition: color 0.3s ease;
+  transition: inherit
 }
 
 .nav_item_contact {
@@ -90,25 +106,25 @@ nav {
   padding: 5px;
   border-radius: 5px;
   background-color: var(--base);
-  transition: color 0.3s ease;
+  transition: inherit
 }
 
 .nav_item_contact:hover {
   background-color: var(--contact);
   color: var(--contact-hl);
-  transition: color 0.3s ease;
+  transition: inherit
 }
 
 .nav_item_contact.active {
   color: var(--text-s);
-  transition: color 0.3s ease;
+  transition: inherit;
   text-decoration: underline;
 }
 
 .nav_item_contact.active:hover {
   background-color: var(--contact);
   color: var(--contact-hl);
-  transition: color 0.3s ease;
+  transition: inherit
 }
 
 footer {
