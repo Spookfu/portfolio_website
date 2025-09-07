@@ -14,11 +14,11 @@
 
   --project: #1c5914;
   --project-hl: #8ad880;
-  --project-ac: #311509;
+  --project-ac: #082d04;
   
   --home: #672e16;  
   --home-hl: #dc8763;
-  --home-ac: #082d04;
+  --home-ac: #311509;
 
   --text: #d1d1d1;
   --text-s: #878787;
@@ -28,18 +28,30 @@
   user-select: none;
 }
 
-/* Page Settings */
 body {
   background-color: var(--base-light);
   color: var(--text);
 }
 
-/* Body Text */
+main {
+  padding: 1rem;
+  font-size: larger;
+}
+
+nav {
+  padding: 10px;
+  block-size: 4rem;
+  background-color: var(--base);
+  font-size: larger;
+  position: fixed;
+  width: 100%;
+  transition: color 0.3s ease;
+}
 
 .nav_status {
   background-color:var(--base-ac);
   width: 100%;
-  line-height: 1rem;
+  line-height: 0.5rem;
   color: var(--project);
   padding-top: 4rem;
 }
@@ -51,23 +63,6 @@ body {
 .nav_status.home {
   background-color: var(--home);
 }
-
-main {
-  padding: 1rem;
-  font-size: larger;
-}
-
-/* Navigation Bar */
-nav {
-  padding: 10px;
-  block-size: 4rem;
-  background-color: var(--base);
-  font-size: larger;
-  position: fixed;
-  width: 100%;
-  transition: color 0.3s ease;
-}
-
 
 .nav_item_home, .nav_item_proj {
   border: 0;
@@ -85,36 +80,48 @@ nav {
 .nav_item_home:hover {
   background-color: var(--home);
   color: var(--home-hl);
-  transition: inherit
+  transition: inherit;
+  padding-bottom: 0.85rem;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  
 }
 
 .nav_item_proj:hover {
   background-color: var(--project);
   color: var(--project-hl);
-  transition: inherit
+  transition: inherit;
+  padding-bottom: 0.85rem;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
 }
 
 .nav_item_home.active {
-  color: var(--text-s);
+  color: var(--home-hl);
   transition: inherit;
   text-decoration: underline;
+  background-color: var(--home);
+  padding-bottom: 1.2rem;
+
 }
 
 .nav_item_proj.active {
-  color: var(--text-s);
+  color: var(--project-hl);
   transition: inherit;
   text-decoration: underline;
+  background-color: var(--project);
+  padding-bottom: 1.2rem;
 }
 
 .nav_item_home.active:hover {
   background-color: var(--home);
-  color: var(--home-hl);
+  color: var(--text-s);
   transition: inherit
 }
 
 .nav_item_proj.active:hover {
   background-color: var(--project);
-  color: var(--project-hl);
+  color: var(--text-s);
   transition: inherit
 }
 
