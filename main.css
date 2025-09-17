@@ -5,20 +5,20 @@
   font-family: Arial, Helvetica, sans-serif;
   color: unset;
   text-decoration: none;
-  --base: #1f1f1f;
+  --base: #1F1F1F;
   --base-t: #1f1f1f2b;
   --base-light: #3d3d3d;
   --base-ac:#253D5B;
 
   --highlight: #142351;
 
-  --project: #1c5914;
-  --project-hl: #8ad880;
-  --project-ac: #082d04;
+  --project: #1E315C;
+  --project-hl: #8A909E;
+  --project-ac: #1A202E;
   
-  --home: #672e16;  
-  --home-hl: #dc8763;
-  --home-ac: #311509;
+  --home: #416245;  
+  --home-hl: #97A398;
+  --home-ac: #253330;
 
   --text: #d1d1d1;
   --text-s: #878787;
@@ -74,7 +74,7 @@ nav {
   background-color:var(--base);
   transition: inherit;
   text-align: center;
-  font-size: 30px;
+  font-size: 28px;
 }
 
 .nav_item_home:hover {
@@ -139,4 +139,12 @@ footer {
 
 .in-img {
   vertical-align: middle;
+}
+
+.top {
+  background-color: var(--blue-dark);
+  padding: 1rem;
+  border-radius: 10px;
+  font-size: 24px;
+  width: 30%
 }
